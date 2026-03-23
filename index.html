@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isabela Olenka Marafigo | Portfólio</title>
+  <!-- Fontes usadas do Google Fonts: Clash Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       Header de navegação fixa
+  ============================================= -->
+  <header id="site-header">
+    <div class="header-inner">
+
+      <!-- Botão de menu mobile (hambúrguer) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Menu de navegação com âncoras -->
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#sobre"    class="nav-link" data-section="sobre">Sobre mim</a></li>
+          <li><a href="#formacao" class="nav-link" data-section="formacao">Formação</a></li>
+          <li><a href="#portfolio" class="nav-link" data-section="portfolio">Portfólio</a></li>
+          <li><a href="#contato"  class="nav-link" data-section="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão de seleção de tema claro/escuro -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon" id="themeIcon">☀</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =============================================
+       SEÇÃO HERO (dentro de #sobre)
+  ============================================= -->
+  <main>
+
+    <section id="sobre" class="section section-sobre">
+      <!-- Decoração de fundo -->
+      <div class="bg-grid" aria-hidden="true"></div>
+      <div class="bg-blob" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="sobre-layout">
+
+          <!-- Coluna de texto -->
+          <div class="sobre-text" data-animate>
+            <p class="eyebrow"> Olá, eu sou</p>
+            <h1 class="hero-title">
+              <span class="name-line">Isabela</span>
+              <span class="name-line accent">Olenka Marafigo</span>
+            </h1>
+            
+            <p class="sobre-bio">
+              Estudante de Análise e Desenvolvimento de Sistemas e apaixonada por tecnologia, curiosa por natureza e em constante aprendizado. Atualmente em formação, busco expandir cada vez mais meus conhecimentos na área tech, e os desafios são apenas mais uma forma de me motivar a evoluir profissionalmente na área.
+              
+            </p>
+
+            <!-- Hobbies com ícones -->
+            <div class="hobbies">
+        
+              <span class="hobby-tag"> Games</span>
+              <span class="hobby-tag"> Leitura</span>
+              <span class="hobby-tag"> Música</span>
+              <span class="hobby-tag"> Tech</span>
+              <span class="hobby-tag"> Culinária</span>
+            </div>
+
+            <div class="sobre-actions">
+              <a href="#contato" class="btn btn-primary">Fale comigo</a>
+              <a href="#portfolio" class="btn btn-outline">Ver projetos</a>
+            </div>
+          </div>
+
+          <!-- Avatar / foto placeholder -->
+          <div class="sobre-avatar" data-animate data-delay="200">
+            <div class="avatar-frame">
+              <div class="avatar-placeholder" aria-label="Foto de perfil">
+                <span class="avatar-initials"> <img src="img/imgPerfil.jpg" span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Ver mais</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         Seção de formação
+    ============================================= -->
+    <section id="formacao" class="section section-formacao">
+      <div class="container">
+
+        <div class="section-header" data-animate>
+          <h2 class="section-title">Formação</h2>
+          <p class="section-sub">Minha trajetória acadêmica e de aprendizado</p>
+        </div>
+
+        <div class="formacao-grid">
+
+          <!-- Cursos superiores -->
+          <div class="formacao-col" data-animate>
+            <h3 class="col-title"> Educação</h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">2025 – Atualmente</span>
+                  <h4>Análise e Desenvolvimento de Sistemas</h4>
+                  <p>UNINTER - Centro Universitário Internacional</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-period">2023 – 2025</span>
+                  <h4>Psicologia</h4>
+                  <p>Centro Universitário UniGuairacá <br> Incompleto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cursos e certificações -->
+          <div class="formacao-col" data-animate data-delay="100">
+            <h3 class="col-title"> Cursos</h3>
+
+            <div class="curso-list">
+              <div class="curso-card">
+                <div class="curso-info">
+                  <h4>Nano Course - Engenharia de Software</h4>
+                  <p>FIAP · 2025</p>
+                </div>
+                <span class="curso-badge">Concluído</span>
+              </div>
+
+              <div class="curso-card">
+                <div class="curso-info">
+                  <h4>Nano Course - Gestão e Infraestrutura de TI</h4>
+                  <p>FIAP · 2025</p>
+                </div>
+                <span class="curso-badge">Concluído</span>
+              </div>
+
+              <div class="curso-card">
+                <div class="curso-info">
+                  <h4>Lógica de Programação</h4>
+                  <p>Trybe · 2025</p>
+                </div>
+                <span class="curso-badge">Concluído</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Idiomas e habilidades -->
+          <div class="formacao-col" data-animate data-delay="200">
+            <h3 class="col-title"> Idiomas</h3>
+
+            <div class="idioma-list">
+              <div class="idioma-item">
+                <div class="idioma-header">
+                  <span>Português</span>
+                  <span class="idioma-nivel">Nativo</span>
+                </div>
+                <!-- Barra animada JS/CSS -->
+                <div class="skill-bar" data-level="100">
+                  <div class="skill-fill"></div>
+                </div>
+              </div>
+
+              <div class="idioma-item">
+                <div class="idioma-header">
+                  <span>Inglês</span>
+                  <span class="idioma-nivel">Intermediário</span>
+                </div>
+                <div class="skill-bar" data-level="60">
+                  <div class="skill-fill"></div>
+                </div>
+              </div>
+
+              <div class="idioma-item">
+                <div class="idioma-header">
+                  <span>Mandarim</span>
+                  <span class="idioma-nivel">Básico</span>
+                </div>
+                <div class="skill-bar" data-level="30">
+                  <div class="skill-fill"></div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="col-title" style="margin-top:2rem"> Tecnologias</h3>
+            <div class="tech-pills">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Java</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         Seção de portfólio
+    ============================================= -->
+    <section id="portfolio" class="section section-portfolio">
+      <div class="container">
+
+        <div class="section-header" data-animate>
+          <h2 class="section-title">Portfólio</h2>
+          <p class="section-sub">Projetos que desenvolvi</p>
+        </div>
+
+
+        <!-- Projetos -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <article class="project-card" data-category="web" data-animate>
+            <div class="project-thumb">
+              <div class="project-img-placeholder">
+                <span> <img src="img/imgProjeto1.png" alt=""></span>
+              </div>
+              <div class="project-overlay">
+                <a href="https://isabela-olenka.github.io/trabalhoFds/" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat">Web</span>
+              <h3>About me</h3>
+              <p>Meu primeiro site! Para que, assim como eu, você possa ver a evolução.</p>
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="design" data-animate data-delay="100">
+            <div class="project-thumb">
+              <div class="project-img-placeholder">
+                <span><img src="img/imgProjeto2.png" alt=""></span>
+              </div>
+              <div class="project-overlay">
+                <a href="https://github.com/Isabela-olenka/atividadePoo" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat">Console</span>
+              <h3>Cofre de moedas</h3>
+              <p>Projeto de estudos que simula um cofre de moedas e suas funcionalidades.</p>
+              <div class="project-tags">
+                <span>JAVA</span><span>POO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="design" data-animate data-delay="100">
+            <div class="project-thumb">
+              <div class="project-img-placeholder">
+                <span><img src="img/img3.jpeg" alt=""></span>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener">Ver projeto →</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-cat">New</span>
+              <h3>Aguarde...</h3>
+              <p>Aguarde para ver novos projetos.</p>
+              <div class="project-tags">
+                <span>...</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         Seção de contato
+    ============================================= -->
+    <section id="contato" class="section section-contato">
+      <div class="container">
+
+        <div class="section-header" data-animate>
+          <h2 class="section-title">Contato</h2>
+          <p class="section-sub">Gostaria de falar comigo? Responderei o mais rápido possível.</p>
+        </div>
+
+        <div class="contato-layout">
+
+          <!-- Informações de contato -->
+          <div class="contato-info" data-animate>
+            <div class="info-card">
+              <span class="info-icon">📧</span>
+              <div>
+                <h4>E-mail</h4>
+                <p>isabelaolenka@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">💼</span>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>linkedin.com/in/isabela-olenka-marafigo-93532428a</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">🐙</span>
+              <div>
+                <h4>GitHub</h4>
+                <p>github.com/Isabela-olenka</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário de contato -->
+          <form class="contact-form" id="contactForm" novalidate data-animate data-delay="150">
+
+            <div class="form-group">
+              <label for="nome">Nome <span class="required">*</span></label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+              <!-- Mensagem de erro -->
+              <span class="form-error" id="erroNome" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+                autocomplete="email"
+              />
+              <span class="form-error" id="erroEmail" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mensagem <span class="required">*</span></label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+              <span class="form-error" id="erroMensagem" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Enviar mensagem</span>
+              <span class="btn-icon">→</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       Footer
+  ============================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Feito por <strong>Isabela Olenka Marafigo</strong> · 2026</p>
+      <p class="footer-stack">HTML5 · CSS3 · JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- =============================================
+       Confirmação de mensagem enviada
+  ============================================= -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal">
+      <div class="modal-icon">✅</div>
+      <h3 id="modalTitle">Mensagem enviada!</h3>
+      <p>Obrigado pelo contato. Retornarei em breve.</p>
+      <button class="btn btn-primary" id="modalClose">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
